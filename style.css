@@ -150,7 +150,7 @@ p,li,aboutp {
   color:#ffffff;
 }
 
-.announcement_home p{
+.announcement_home a{
   text-align: center;
   margin:auto;
   margin-top: 5vh;
