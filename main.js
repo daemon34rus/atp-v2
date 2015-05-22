@@ -1,12 +1,12 @@
 $(document).ready(function() {
-  var navpos = $('#nav').offset();
+  var navpos = $('.nav').offset();
   console.log(navpos.top);
     $(window).bind('scroll', function() {
       if ($(window).scrollTop() > navpos.top) {
-        $('#nav').addClass('fixed');
+        $('.nav').addClass('fixed');
        }
        else {
-         $('#nav').removeClass('fixed');
+         $('.nav').removeClass('fixed');
        }
     });
 });
