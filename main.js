@@ -11,7 +11,7 @@ $(document).ready(function(){
 	}
 
 	$(window).scroll(function(){
-    var aboveHeight = $('.nav').outerHeight();
+    var aboveHeight = $('#slide1').outerHeight();
 //if scrolled down more than the header’s height
       if ($(window).scrollTop() > aboveHeight){
 
