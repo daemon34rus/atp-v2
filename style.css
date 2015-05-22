@@ -34,7 +34,7 @@ p {
   transform-style: inherit;
 }
 
-img {
+/*img {
   position: absolute;
   top: 50%;
   left: 35%;
@@ -49,7 +49,7 @@ img {
 
 img:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
+}*/
 
 .slide:before {
   content: "";
@@ -90,12 +90,12 @@ img:last-of-type {
 }
 
 #title {
-  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-6.jpg");
+  
    background-attachment: fixed;  
 }
 
 #slide1:before {
-  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-4.jpg");
+  background-image: url("http://www.hdwallpapersnew.net/wp-content/uploads/2015/04/awesome-dandelion-flower-wide-hd-new-wallpaper-free-beautiful-desktop-pictures.jpeg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }

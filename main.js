@@ -1,8 +1,8 @@
 
 $(document).ready(function(){
 	//$(".wrap").fadeIn("slow");
-	$(".home").animate({'opacity':'1'},500);
-	var divs =[".even", ".chapters", ".leadership", ".sponsors", ".contact"]
+	$(".slide1").animate({'opacity':'1'},500);
+	var divs =[".slide1", ".chapters", ".leadership", ".sponsors", ".contact"]
 	var posdiv = [];
 	var divsnum = 5;
 	for (i=0; i<divsnum; i++){
