@@ -8,16 +8,16 @@ $(document).ready(function(){
 	// for (i=0; i<divsnum; i++){
 	// 	posdiv[i]=$(divs[i]).offset().top;
 		//window.alert(posdiv[i]);
-	}
+
+    var currentPos = $(window).scrollTop();
+    var aboveHeight = $('#slide1').offset();
+	});
 
 	$(window).scroll(function(){
-    var currentPos = $(window).scrollTop();
-    var aboveHeight = $('#slide1').offset().top;
-    window.alert(currentPos+" "+aboveHeight);
     if (currentPos>aboveHeight){
-      $('.nav').addClass('fixed').css('top','0').next().css('padding-top','60px');
+      $('.nav').addClass('fixed');
     } else {
-      $('.nav').removeClass('fixed').next().css('padding-top','0');
+      $('.nav').removeClass('fixed');
     }
 //if scrolled down more than the header’s height
       // if ($(window).scrollTop() > aboveHeight){
