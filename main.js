@@ -24,7 +24,7 @@
 //     var aboveHeight = $('#slide1').offset();
 // 	});
 
-// 	$(window).scroll(function(){
+ 	$(window).scroll(function(){
 //     if (currentPos>aboveHeight){
 //       $('.nav').addClass('fixed');
 //     } else {
@@ -79,7 +79,7 @@
 // 	// $(".jumplink").click(function(){
 // 	// 	$(".nav").slideUp("fast");
 // 	// });
-//});
+});
       var app = angular.module('sampleApp', []);
     app.controller('SampleCtrl', function($scope){
       $scope.people = [
