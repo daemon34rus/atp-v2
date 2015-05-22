@@ -78,7 +78,7 @@ $(document).ready(function() {
 // 	// $(".jumplink").click(function(){
 // 	// 	$(".nav").slideUp("fast");
 // 	// });
-});
+//});
       var app = angular.module('sampleApp', []);
     app.controller('SampleCtrl', function($scope){
       $scope.people = [
