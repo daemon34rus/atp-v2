@@ -177,7 +177,7 @@ p,li,aboutp {
   position:fixed;
 }
 .nav {
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 4em;
   border-right: 1px dotted black;
