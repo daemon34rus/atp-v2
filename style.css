@@ -18,7 +18,7 @@ h1 {
    font-size: 250%
 }
 
-p, li {
+p, li, .abouttext {
   font-size: 130%;
   line-height: 110%;
   color: #333;
@@ -116,7 +116,7 @@ h2{
 h3{
   font-family:"Raleway";font-weight:300; font-size:1.5em;
 }
-p,li,a,aboutp {
+p,li,a {
   font-family: "Source Sans Pro"; 
 }
 
