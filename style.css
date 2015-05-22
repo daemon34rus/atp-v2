@@ -116,7 +116,7 @@ h2{
 h3{
   font-family:"Raleway";font-weight:300; font-size:1.5em;
 }
-p,li,aboutp {
+p,li,a,aboutp {
   font-family: "Source Sans Pro"; 
 }
 
@@ -154,6 +154,7 @@ p,li,aboutp {
   text-align: center;
   margin:auto;
   margin-top: 5vh;
+  margin-left:35%;
 }
 
 .active {
@@ -227,7 +228,8 @@ p,li,aboutp {
     margin-top: 10vh;
     width:50%;
     margin-right: 25%;
-    margin-left: 25%; }
+    margin-left: 25%;
+    margin-bottom:10vh; }
 .about {
   margin-top:2em;
 }
