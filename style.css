@@ -176,7 +176,8 @@ p,li,aboutp {
   position:fixed;
 }
 .nav {
-  position: absolute;
+  display:none;
+  position: fixed;
   width: 100vw;
   height: 4em;
   border-right: 1px dotted black;
