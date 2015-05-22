@@ -149,12 +149,13 @@ p,li,a,aboutp {
 .announcement a:hover{
   color:#ffffff;
 }
-
+.announcement_home{
+  text-align: center;
+}
 .announcement_home a{
+  font-size:3vh;
   text-align: center;
   margin:auto;
-  margin-top: 5vh;
-  margin-left:35%;
 }
 
 .active {
