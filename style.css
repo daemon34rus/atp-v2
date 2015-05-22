@@ -104,8 +104,8 @@ img:last-of-type {
 body {
   margin: auto; }
 
-.content {
-  padding-top: 3em; }
+/*.content {
+  padding-top: 3em; }*/
 
 h1 {
   font-family: "Raleway"; font-weight:400; margin:auto; font-size:3.5em;}
@@ -199,7 +199,7 @@ p,li,aboutp {
   background-color: #fafafa; }
 
 .wrap {
-  opacity: 0;
+  opacity: 1;
   width: 80%;
   margin: auto;
   padding-top: 1em; }
@@ -217,7 +217,9 @@ p,li,aboutp {
   text-align: center; }
   .slide1 img {
     margin-top: 10vh;
-    width:70%; }
+    width:70%;
+    margin-right: 15%;
+    margin-left: 15%; }
 
 .about .abouttext {
   padding-left: 3em;
