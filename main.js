@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
     var currentPos = $(window).scrollTop();
-    var aboveHeight = $('#slide1').outerHeight();
+    var aboveHeight = $('#slide1').offset().top;
     window.alert(currentPos+" "+aboveHeight);
     if (currentPos>aboveHeight){
       $('.nav').addClass('fixed').css('top','0').next().css('padding-top','60px');
