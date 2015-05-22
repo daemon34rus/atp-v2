@@ -312,6 +312,9 @@ p,li,aboutp {
     display: inline-block;
     padding: 1em;
     margin: 1em; }
+.sponsor img{
+  width:20vw;
+}
 .navb{
   list-style-type: none;
   display:inline-block;
