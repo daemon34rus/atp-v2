@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 		var currentPos = $(window).scrollTop();
 		var difference = currentPos - posdiv[0];
-		//window.alert(difference);
+		window.alert(difference);
 		//navbar show on scroll down 100
 		if (difference >=-300){
 			$(".nav").slideDown("150");
