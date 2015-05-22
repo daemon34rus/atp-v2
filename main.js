@@ -11,33 +11,40 @@ $(document).ready(function(){
 	}
 
 	$(window).scroll(function(){
+    var currentPos = $(window).scrollTop();
     var aboveHeight = $('#slide1').outerHeight();
+    window.alert(currentPos+" "+aboveHeight);
+    if (currentPos>aboveHeight){
+      $('.nav').addClass('fixed').css('top','0').next().css('padding-top','60px');
+    } else {
+      $('.nav').removeClass('fixed').next().css('padding-top','0');
+    }
 //if scrolled down more than the header’s height
-      if ($(window).scrollTop() > aboveHeight){
+      // if ($(window).scrollTop() > aboveHeight){
 
-        // if yes, add “fixed” class to the <nav>
-        // add padding top to the #content 
-            //(value is same as the height of the nav)
-            $('.nav').addClass('fixed').css('top','0').next()
-            .css('padding-top','60px');
+      //   // if yes, add “fixed” class to the <nav>
+      //   // add padding top to the #content 
+      //       //(value is same as the height of the nav)
+      //       $('.nav').addClass('fixed').css('top','0').next()
+      //       .css('padding-top','60px');
 
-            } else {
+      //       } else {
 
-        // when scroll up or less than aboveHeight,
-           // remove the “fixed” class, and the padding-top
-            $('.nav').removeClass('fixed').next()
-            .css('padding-top','0');
-            }
-        });
+      //   // when scroll up or less than aboveHeight,
+      //      // remove the “fixed” class, and the padding-top
+      //       $('.nav').removeClass('fixed').next()
+      //       .css('padding-top','0');
+      //       }
+      //   });
 		//var difference = currentPos - posdiv[0];
 		//window.alert(difference);
 		//navbar show on scroll down 100
 		//if (difference >=-300){
 		//	$(".nav").slideDown("150");
 		//}
-		//$(".wrap").each(function(){
-			var offsets=$(this).offset().top;
-			var pos=$(window).scrollTop();
+		// //$(".wrap").each(function(){
+		// 	var offsets=$(this).offset().top;
+		// 	var pos=$(window).scrollTop();
 			//window.alert(offsets+" "+pos);
 			//if (offsets-pos<=400){
 				//window.alert("foo");
