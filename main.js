@@ -1,33 +1,49 @@
 
 $(document).ready(function(){
 	//$(".wrap").fadeIn("slow");
-	$(".slide1").animate({'opacity':'1'},500);
-	var divs =[".slide1", ".chapters", ".leadership", ".sponsors", ".contact"]
-	var posdiv = [];
-	var divsnum = 5;
-	for (i=0; i<divsnum; i++){
-		posdiv[i]=$(divs[i]).offset().top;
+	// $(".slide1").animate({'opacity':'1'},500);
+	// var divs =[".slide1", ".chapters", ".leadership", ".sponsors", ".contact"]
+	// var posdiv = [];
+	// var divsnum = 5;
+	// for (i=0; i<divsnum; i++){
+	// 	posdiv[i]=$(divs[i]).offset().top;
 		//window.alert(posdiv[i]);
 	}
 
 	$(window).scroll(function(){
+    var aboveHeight = $('.nav').outerHeight();
+//if scrolled down more than the header’s height
+      if ($(window).scrollTop() > aboveHeight){
 
-		var currentPos = $(window).scrollTop();
-		var difference = currentPos - posdiv[0];
-		window.alert(difference);
+        // if yes, add “fixed” class to the <nav>
+        // add padding top to the #content 
+            (value is same as the height of the nav)
+            $('nav').addClass('fixed').css('top','0').next()
+            .css('padding-top','60px');
+
+            } else {
+
+        // when scroll up or less than aboveHeight,
+            remove the “fixed” class, and the padding-top
+            $('nav').removeClass('fixed').next()
+            .css('padding-top','0');
+            }
+        });
+		//var difference = currentPos - posdiv[0];
+		//window.alert(difference);
 		//navbar show on scroll down 100
-		if (difference >=-300){
-			$(".nav").slideDown("150");
-		}
-		$(".wrap").each(function(){
+		//if (difference >=-300){
+		//	$(".nav").slideDown("150");
+		//}
+		//$(".wrap").each(function(){
 			var offsets=$(this).offset().top;
 			var pos=$(window).scrollTop();
 			//window.alert(offsets+" "+pos);
-			if (offsets-pos<=400){
+			//if (offsets-pos<=400){
 				//window.alert("foo");
-				$(this).animate({'opacity':'1'},500);
-			}
-		});
+				//$(this).animate({'opacity':'1'},500);
+			//}
+		//});
 
 		// for (n=0; n<divsnum; n++){
 		// 	var currentPoss = $(window).scrollTop();
@@ -40,7 +56,7 @@ $(document).ready(function(){
 		// 	}
 		// }
 		
-	});
+	// });
 	// $(".jumplink").click(function(){
 	// 	$(".nav").slideUp("fast");
 	// });

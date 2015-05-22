@@ -173,10 +173,13 @@ p,li,aboutp {
     margin-bottom:0.5em;
     margin-top:0.5em;
 }
+.fixed{
+  position:fixed;
+}
 .nav {
-  position: fixed;
+  position: relative;
   width: 100vw;
-  height: 3em;
+  height: 4em;
   border-right: 1px dotted black;
   background-color: #ffffff;
   border-bottom: 1px solid #000088; }
@@ -225,7 +228,9 @@ p,li,aboutp {
     width:50%;
     margin-right: 25%;
     margin-left: 25%; }
-
+.about {
+  margin-top:2em;
+}
 .about .abouttext {
   padding-left: 3em;
   padding-right: 3em; }
