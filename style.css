@@ -330,7 +330,7 @@ p,li,a {
 .faq li answer {
   font-size: 1em; }
 .questiontext{
-  margin:0.2em;
+  padding:0.5em;
   background: #00c979;
   color:#ffffff;
 }
