@@ -299,7 +299,7 @@ p,li,a {
     float: left;
     position: left;
 /*    height: 5.5em;*/
-    width: 5.5em; }
+    width: 7.5em; }
 .people h2{
   margin-top:0em;
   margin-bottom:0.5em;
@@ -329,7 +329,11 @@ p,li,a {
   font-size: 2em; }
 .faq li answer {
   font-size: 1em; }
-
+.questiontext{
+  margin:0.2em;
+  background: #00c979;
+  color:#ffffff;
+}
 .contact {
   text-align: center; }
   .contact h1 {
