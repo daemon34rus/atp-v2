@@ -144,6 +144,8 @@ p,li,a {
 .announcement a{
   text-decoration: none;
   color:#000000;
+  margin:auto;
+  font-size:4vh;
 }
 .announcement a:hover{
   color:#ffffff;
