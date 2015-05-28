@@ -141,11 +141,14 @@ p,li,a {
   color:#ffffff;
 }
 
+.announcement p {
+  margin:auto;
+  font-size:4vh;
+}
+
 .announcement a{
   text-decoration: none;
   color:#000000;
-  margin:auto;
-  font-size:4vh;
 }
 .announcement a:hover{
   color:#ffffff;
