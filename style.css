@@ -130,6 +130,7 @@ p,li,a {
   text-align: center;
   background:  #00c979 ;
   margin-top:5vh;
+  margin:auto;
 }
 .linktochap{
   text-decoration: none;
